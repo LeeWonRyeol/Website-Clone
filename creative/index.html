@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <a href="#" class="nav-a2">Start Bootstrap</a>
+    </div>
+    <ul class="menu">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="h-i">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <article class="article1">
+    <div class="article1-main">
+      <div class="art1-1">
+        <h1>Your Favorite Place for Free Bootstrap Themes</h1>
+        <hr>
+      </div>
+      <div class="art1-2">
+        <p>Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+        <a href="#" class="button">FIND OUT MORE</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="article2 p8">
+    <div class="article2-main">
+      <div class="art2-1">
+        <h2>We've got what you need!</h2>
+        <hr>
+      </div>
+      <div class="art2-2">
+        <p>Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+        <a href="#" class="button">GET STARTED!</a>
+      </div>
+    </div>
+  </article>
+  
+  <article class="article3 p8">
+    <div class="article3-main">
+      <div class="art3-1">
+        <h2>At Your Service</h2>
+        <hr>
+      </div>
+      <div class="art3-2">
+        <div class="icon-boxgroup">
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa fa-gem"></i>
+            </div>
+            <div class="icon-i">
+              <h4>Sturdy Themes</h4>
+              <p>Our themes are updated regularly to keep them bug free!</p>
+            </div>
+          </div>
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa fa-laptop"></i>
+            </div>
+            <div class="icon-i">
+              <h4>Up to Date</h4>
+              <p>All dependencies are kept current to keep things fresh.</p>
+            </div>
+          </div>
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa fa-globe"></i>
+            </div>
+            <div class="icon-i">
+              <h4>Ready to Publish</h4>
+              <p>You can use this design as is, or you can make changes!</p>
+            </div>
+          </div>
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="icon-i">
+              <h4>Made with Love</h4>
+              <p>Is it really open source if it's not made with love?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="article4">
+    <div class="img" onclick="view(0)">
+        <img src="img/1.jpg" alt="0" class="a4-img" id="myImg">
+        <div class="tag">
+          <div class="img-i">Category
+          <br>Project</div>
+        </div>
+    
+    </div>
+    <div class="img" onclick="view(1)">
+        <img src="img/2.jpg" alt="1" class="a4-img" >
+        <div class="tag">
+          <div class="img-i">Category
+          <br>Project</div>
+        </div>
+    </div>
+    <div class="img" onclick="view(2)">
+      <img src="img/3.jpg" alt="2" class="a4-img" >
+      <div class="tag">
+        <div class="img-i">Category
+          <br>Project</div>
+      </div>  
+    </div>
+    <div class="img" onclick="view(3)">  
+      <img src="img/4.jpg" alt="3" class="a4-img">
+      <div class="tag">
+        <div class="img-i">Category
+          <br>Project</div>
+      </div>
+    </div>
+    <div class="img" onclick="view(4)">
+      <img src="img/5.jpg" alt="4" class="a4-img">
+      <div class="tag">
+        <div class="img-i">Category
+          <br>Project</div>
+      </div>     
+    </div>
+    <div class="img" onclick="view(5)">      
+      <img src="img/6.jpg" alt="5" class="a4-img">
+      <div class="tag">
+        <div class="img-i">Category
+          <br>Project</div>
+      </div>      
+    </div>
+  <div class="modal">
+    <span class="close" onclick="close_img()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div> 
+  </article>
+
+  <article class="article5 p8">
+    <div class="article5-main">
+      <h2>Free Download at Start Bootstrap!</h2>
+      <a href="#" class="button">DOWNLOAD NOW!</a>
+    </div>
+  </article>
+  
+  <article class="article6 p8">
+    <div class="article6-main">
+      <div class="art6-1">
+        <h1>Let's Get In Touch!</h1>
+        <hr>
+        <p>Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+      </div>
+      <div class="art6-2">
+        <input type="text" value="Full name">
+        <input type="email" value="Email address">
+        <input type="text" name="phonenumber" id="" value="Phone number">
+        <textarea name="Meessage" id="" cols="30" rows="10">Message</textarea>
+        <div>
+          <button class="submit">SUBMIT</button>
+        </div>
+      </div>
+      <div class="art6-3">
+        <i></i>
+        <div class="phonenumber"><p>+1 (555) 123-4567</p></div>
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div><p>Copyright © 2022 - Company Name</p></div>
+  </footer>
+  <script>
+
+    // document.getElementsByClassName("img")[0].onclick = function(){
+    //   alert(1);
+    // };
+    var modal = document.getElementsByClassName("modal");
+
+    var img = document.querySelector(".img").childNodes;
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    function view(n){
+      modal[0].style.display = "block";
+      var i =document.getElementsByClassName("a4-img")[n];
+      var t =document.getElementsByClassName("img-i")[n];
+      console.log(t);
+      modalImg.src = i.src;
+      captionText.innerHTML = t.textContent;
+    }
+    
+    function close_img(){
+      console.log(1);
+      modal[0].style.display = "none";
+    }
+  </script>
+</body>
+</html>
