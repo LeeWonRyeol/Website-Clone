@@ -1,0 +1,674 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+/*swiper*/
+.slide-wrap{
+    width: 100%;
+    position: relative;
+    position: fixed;
+    z-index: 99;
+}
+.slide{
+    width: 100%;
+    padding: 0 5rem 0.5rem;
+    font-size: 0.5rem;
+    font-weight: 600;
+    position: absolute;
+}
+.slide1{
+    background-color: black;
+    
+    z-index: 1; 
+}
+.slide2{
+    background-color: red;
+    
+}
+.slide a{
+    color: white;
+    width: 100%;
+    display: block;
+   padding-top: 8px;
+   
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 2.5rem;
+    color: white;
+    z-index: 999;
+}
+header .logo img{
+    filter: invert(1);
+}
+.head-menu li{
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    font-weight: 700;
+}
+.head-menu li a{
+    color: white;
+}
+.head-button .btn{
+    border: 1px solid rgba(221,221,221,0.5);
+    padding: 0.6rem 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 0.325rem;
+    color: white;
+}
+.head-button .icon img{
+    filter: invert(1);
+}
+.head-button .icon-left{
+    margin-left: 1.2rem;
+    padding: 1rem;
+}
+header .mobile-menu{
+    display: none;
+    
+}
+.mobile-menu ul{
+    display: flex;
+}
+.mobile-menu ul li{
+    width: 24px;
+    height: 24px;
+    margin-left: 14px
+}
+.mobile-menu ul li img{
+    filter: invert(1)
+}
+.mobile-bar{
+    position: relative;
+    top: 1px;
+    width: 24px;
+}
+.line{
+    background-color: #fff !important;
+    position: absolute;
+    left: 3px;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #000;
+    border: 0;
+    
+}
+.top{
+    top: calc(50% - 8px);
+}
+.center{
+    top: 44%;
+    opacity: 1;
+}
+.bottom{
+    top: calc(50% + 4px);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+    
+    
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    font-size: 30px;
+}
+.side-btn{
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+.side-btn a{
+    padding: 0;
+    margin: 0;
+   
+}
+.sidenav ul{
+    display: flex;
+    cursor: pointer;
+}
+.sidenav ul img{
+    padding-top: 12px !important;
+    padding: 0 10px;
+}
+.side-btn .info{
+    display: flex;
+}
+.info a{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.side-menu{
+    color: black;
+    margin-bottom: 25px;
+}
+.side-menu ul{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+.side-menu ul li{
+    padding: 5px;
+}
+.side-menu div{
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #999;
+}
+.menu-box{
+    padding-left: 20px;
+}
+.navi-con{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 30px 0;
+}
+.navi{
+    color: black;
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.navi ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navi ul li{
+    color: black;
+    flex: 1 0 auto;
+    font-size: 13px;
+    text-align: center;
+    padding: 15px 0;
+}
+.navi ul li:hover{
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+}
+/*main view*/
+.main_article{
+    height: 940px;
+    background-color: black;
+    
+}
+.main1{
+    background: url(../images/230313-첼린지도-이벤트.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main2{
+    background: url(../images/2023-main-banner-road-01.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main3{
+    background: url(../images/2023-main-banner-mtb-01.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.full-slide  .text{
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    letter-spacing: -3px;
+    /* position: fixed; */
+}
+.full-slide .text h1{
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 0.9rem;
+
+}
+.full-slide .text p{
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.full-slide h1{
+    margin: 0;
+}
+.full-slide .text a{
+    padding: 1.25rem 5rem;
+    background-color: white;
+    border-radius: 3rem;
+    margin-top: 2.5rem;
+}
+.bars{
+    display: flex;
+}
+.full-slide-container{
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+    /* position: fixed; */
+}
+.full-slider {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.full-slide {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+/*scroll*/
+.scroll{
+    background-color: white;
+    z-index: 98;
+}
+/*하이라이트*/
+.highlight{
+    padding-top: 6rem;
+    padding-bottom: 3.75rem;
+}
+.highlight h3{
+    padding-bottom: 2rem;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    transition: all 2s;
+    overflow: hidden;
+}
+.box{
+    width: 33.33333%;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.h-p1{
+    font-size: 1rem !important;
+    font-weight: 700;
+    color: black !important;
+    margin-bottom: 0;
+}
+.box p{
+    font-size: 0.725rem;
+    color: #666;
+}
+.box img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.slide-box{
+    width: 100%;
+    overflow: hidden;
+}
+
+/*첼로시리즈*/
+.series{
+    padding-top: 6rem;
+    padding-bottom: 3.75rem;
+}
+.series h3{
+    padding-bottom: 2rem;
+}
+.series-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1.25rem;
+    margin-left: -1.25rem;
+}
+.series_box{
+    width: 50%;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+.series_link{
+    height: 0;
+    padding-bottom: 65%;
+    position: relative;
+    display: block;
+    border-radius: 0.875rem;
+    overflow: hidden;
+}
+.series .text{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    z-index: 6;
+    color: #fff;
+}
+.text h2{
+    font-size: 2rem;
+    margin: 0;
+}
+.text p{
+    font-size: 0.8rem;
+    word-break: keep-all;
+    margin: 0;
+    line-height: 1.7;
+}
+.filter{
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0) 80%);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.series_box img{
+    width: auto !important;
+    max-width: initial;
+    height: 120%;
+    top: 10%;
+    left: -35%;
+    z-index: 2;
+    position: absolute;
+}
+.background{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.back1{
+    background-color: #788881;
+}
+.back2{
+    background-color: #52626c;
+}
+.back3{
+    background-color: #a68484;
+}
+.back4{
+    background-color: #849ca6;
+}
+.back5{
+    background-color: #6c617c;
+}
+.back6{
+    background-color: #ab9c8b;
+}
+/*온라인 서포트*/
+.support{
+    padding-top: 6rem;
+    padding-bottom: 6.75rem;
+}
+.support h3{
+    padding-bottom: 3rem;
+}
+.support-container{
+    display: flex;
+    margin-right: -1.25rem;
+    margin-left: -1.25rem;
+}
+.support .box-padding{
+    width: 33.33333%;
+    padding: 0 1.25rem;
+}
+
+.support-box:hover{
+    background-color:#eee ;
+    cursor: pointer;
+    transition: all 0.5s
+}
+.support-box{
+    width: 100%;
+    border:1px solid #eee;
+    border-radius: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+.support-box h4{
+    width: 100%;
+   
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+.support-box p{
+    width: 100%;
+    
+    margin: 0;
+   font-size: 0.8rem;
+   color: #666;
+   line-height: 1.7;
+}
+
+/*푸터*/
+footer{
+    border-top: 1px solid #eee;
+    padding-top: 5rem;
+}
+.foot-container{
+    display: flex;
+    width: 100%;
+}
+.footer_logo{
+    width: 32%;
+}
+.menu-list{
+    width: 17%;
+}
+.footer_logo img{
+    width: 14rem;
+}
+.menu-list p{
+    margin: 0;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+.menu-list ul{
+    color: #666;
+    
+}
+.menu-list ul li{
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.icon{
+    margin-bottom: 1.3rem;
+}
+.icon a{
+    padding-right:30px;
+}
+.icon a img{
+    width: 1.2rem;
+}
+.company_information{
+    color: #666;
+    margin-bottom: 1.1rem
+}
+.company_information span{
+    font-size: 0.7rem;
+}
+.light_font{
+    color: #999;
+}
+.terms{
+    margin-bottom: 0.8rem;
+}
+.terms a{
+    padding-bottom: 4px;
+    border-bottom: 1px solid #999;
+    font-size: 0.7rem;
+    color: #666;
+}
+.site{
+    margin-bottom: 2rem;
+}
+.site span{
+    color: #999;
+    font-size: 0.7rem;
+}
+.site span a{
+    color: #999;
+}
+.lang{
+    border: 1px solid #eee;
+    margin-bottom: 6rem;
+    padding: 1rem 2.5rem 1rem 0.5rem;
+    font-size: 0.7rem;
+    display: flex;
+}
+.lang img{
+    padding-top: 2px;
+    
+}
+.kor{
+    margin-left: 10px;
+}
+
+
+
+/*media query*/
+@media all and (max-width:950px){
+    .head-menu{
+        display: none;
+    }
+    .head-button{
+        display: none;
+    }
+    header .mobile-menu{
+        display: block;
+    }
+}
+@media all and (max-width:950px){
+    .container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .support-container{
+        display: block;
+       
+    }
+    .support .box-padding{
+        width: 100%;
+        
+    }
+    .support-box{
+        text-align: left;
+        padding: 1rem 0;
+        padding-left: 1rem;
+        margin-bottom: 20px;
+    }
+    footer{
+        padding-top: 2rem;
+    }
+    .foot-container{
+        flex-direction: column;
+    }
+    .footer_logo{
+        margin-bottom: 1rem;
+    }
+    .menu-list{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .menu-list ul{
+        display: flex;
+    }
+    .menu-list ul li{
+        margin-right: 20px;
+    }
+    .icon{
+        margin-bottom: 0.8rem;
+    }
+    .company_information span{
+        font-size: 0.8rem;
+    }
+    .lang{
+        width: 15%;
+        padding: 9px 12px
+    }
+    .footer_logo img{
+        width: 9rem;
+    }
+    .main_article .text h1{
+        font-size: 3rem;
+    }
+    .main_article .text p{
+        font-size: 1rem;
+    }
+    .main_article .text a{
+        padding: 1rem 3rem;
+    }
+    .flex-wrap{
+        display: block;
+        position: relative;
+        width: 5400px;
+    } 
+    
+      
+     .box{
+        width: 100%;
+        position: relative;
+        width: 900px;
+        float: left;
+    }
+}
