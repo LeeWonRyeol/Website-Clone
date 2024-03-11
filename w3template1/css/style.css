@@ -1,0 +1,468 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style-type: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+/*header*/
+header{
+    background-color: black;
+    color: white;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+header ul {
+    padding-left: 0px;
+    margin: 0 ;
+}
+header ul li{
+    display: inline-block;
+    padding: 14px 20px;
+    font-size: 1rem;
+    height: 22px;
+   
+    text-align: center; 
+}
+header ul li:hover{
+    background-color: lightgray;
+    color: black;
+}
+header .desktop-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+header .mobile-icon{
+    width: 70px;
+    height: 50px;
+    text-align: center;
+}
+header .mobile-icon:hover{
+    background-color: lightgray;
+}
+header .desktop-icon{
+    width: 70px;
+    height: 50px;
+    text-align: center;
+}
+header i{
+    margin: 18px;
+}
+header .desktop-icon:hover{
+    background-color: red;
+}
+
+/*article1*/
+.main-container{
+    position: relative;
+}
+.a1{
+    width: 100%;
+    height: 900px;
+     margin-top: 50px;
+    position: relative;
+}
+
+.a1{
+    display: none;
+}
+.a1-1{
+    display: block;
+}
+.a1-1{
+    background: url("../img/ny.jpg") no-repeat center;
+    background-size: cover;
+    
+}
+.a1-2{
+    background: url("../img/la.jpg") no-repeat center;
+    background-size: cover;
+}
+.a1-3{
+    background: url("../img/chicago.jpg") no-repeat center;
+    background-size: cover;
+}
+.a1 .a1-font{
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,0%);
+    left: 50%;
+    bottom: 0;
+
+}
+.a1 h1{
+    color: white;
+
+}
+.a1 p{
+    color: white;
+}
+.fade{
+    animation: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+/*article2*/
+
+.a2{
+    /* width: 100%; */
+    height: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    max-width: 800px;
+    
+}
+.a2 h1{
+    font-weight: 300;
+    font-size: 1.9rem;
+    text-align: center;
+    letter-spacing: 5px;
+    /* width: 768px; */
+}
+.a2 .a2-p1{
+    text-align: center;
+    color: gray;
+    /* width: 768px; */
+}
+.name-main{
+    padding: 32px 0px;
+}
+.name-box{
+    text-align: center;
+    float: left;
+    width: 33%;
+}
+.name-img{
+    width: 150px;
+    height: 150px;
+    background: url(../img/bandmember.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin: auto;
+    
+}
+.name-box p{
+    margin: 20px 0;
+}
+/*article3*/
+
+.a3{
+    background-color: black;
+    
+}
+.a3-back{
+    /* width: 100%; */
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    max-width: 800px;
+}
+.a3-name{
+    color: white;
+    text-align: center;
+}
+.a3-name h1{
+    font-size: 1.9rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+.a3-name p{
+    color: gray;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+.a3 .a3-p1{
+    padding: 15px 10px;
+    font-weight: bold;
+    
+}
+.a3 .a3-p2{
+   padding: 0 10px;
+    color: gray;
+    padding-bottom: 20px;
+}
+.a3 .a3-p3{
+    padding: 0 10px;
+}
+.a3 .a3-input{
+    background-color: black;
+    color: white;
+    width: 110px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.a3 .a3-input:hover{
+    background-color: lightgray;
+    border: lightgray;
+}
+.a3 ul{
+    margin: auto;
+    padding: 0;
+}
+
+.a3 li{
+    background-color:white;
+    /* width: 766px; */
+    height: 20px;
+    border:1px lightgray solid;
+    padding:8px 16px ;
+    color: gray;
+    margin: 0;
+}
+.soldout{
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 30px;
+    font-size: 15px;
+    padding: 0 5px;
+    margin-left: 16px;
+}
+.a3 .a3-3{
+    color: white;
+    background-color: black;
+    padding: 0 8px;
+    border-radius: 50%;
+    float: right;
+}
+.a3 .tour{
+    background-color: white;
+    width: 100%;
+    height: 200px;
+}
+.a3 .a3-img{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+.a3 .a3-box{
+   padding: 0 1%;
+    float: left;
+   width: 31.33333%;
+}
+.a3 .tour p{
+    margin: 0;
+}
+.a3 .a3-con{
+    padding: 30px 0;
+}
+
+/*article4*/
+
+.a4{
+    /* width: 100%; */
+    height: 331px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    max-width: 800px;
+
+}
+
+.a4 .a4-main{
+    text-align: center;
+
+}
+.a4 .a4-main h1{
+    font-weight: 300;
+    font-size: 1.9rem;
+    letter-spacing: 5px;
+    margin-bottom: 12px ;
+}
+.a4-main p{
+    color: gray;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.a4 .a4-icon{
+    width: 383px;
+    height: 81px;
+    float: left;
+}
+.a4 .a4-icon i{
+    width: 30px;
+    height: 18px;
+}
+.a4 .a4-icon p{
+    display: inline-block;
+}
+.a4 .a4-box{
+    width: 383px;
+    margin: 0;
+    float: right;
+}
+
+.a4 .a4-box .name,
+.a4 .a4-box .email
+{
+    
+    border: 1px solid #ccc;
+    width: 165px;
+    height: 22px;
+    padding: 10px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.a4 .a4-box .message
+{
+    border: 1px solid #ccc;
+    width: 358px;
+    height: 22px;
+    padding: 10px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.send{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    float: right;
+    border: 0px;
+    margin-right: 3px;
+}
+
+/*article5*/
+
+.a5{
+    width: 100%;
+    height: 920px;
+    background: url(../img/map.jpg) no-repeat center;
+    background-size: cover;
+    
+}
+/*footer*/
+footer{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 24px;
+    color: gray;
+}
+footer i:hover{
+    color: lightgray;
+}
+footer p{
+    font-size: 1rem;
+}
+footer a{
+    color: gray;
+}
+
+
+@media (max-width:1023px){
+    
+    .a4{
+        height: 500px;
+    } 
+    .a4 .a4-icon,.a4 .a4-box{
+        float: none;
+        margin: auto;
+    }
+    .a4 .a4-icon{
+        width: 450px;
+        height: 150px;
+    }
+    .a4 .a4-box{
+        width:480px;
+        height: 150px;
+    }
+    .a4 .a4-box .name, .a4 .a4-box .email{
+        width: 200px;
+        height: 30px;
+        padding: 15px;
+    }
+    .a4 .a4-box .message{
+        width: 440px;
+        height: 30px;
+        padding: 15px;
+    }
+    .send{
+        margin-right: 7px;
+        width: 120px;
+        height: 50px;
+    }
+}
+@media(max-width:557px){
+    header .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+    }
+}
+@media(max-width:557px){
+    .a1,.a5{
+        height: 300px;
+    }
+    .a2{
+        height: 1500px;
+    }
+    .name-box{
+        float: none;
+        margin: auto;
+        width: auto;
+    }
+    .name-box p{
+        font-size: 1.5rem;
+    }
+    .name-img{
+        width: 300px;
+        height: 300px;
+    }
+    .a1 .a1-font{
+        display: none;
+    }
+    .a3 .a3-box{
+        float: none;
+        width: 90%;
+        height: 400px;
+        margin: auto;
+    }
+    .a3 .a3-img{
+        width: 100%;
+        height: 230px;
+    }
+    .a3 .tour{
+        height: 150px;
+    }
+    .a3-back{
+        height: 1500px;
+    }
+}
+@media(min-width:558px) and (max-width:1000px){
+    .a1, .a5{
+        height: 500px;
+    }
+    .a1 .a1-font{
+        bottom: 60%;
+    }
+}
+@media(max-width:755px){
+    .a3 .tour{
+        height: 220px;
+    }
+}
