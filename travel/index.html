@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELGO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+
+</head>
+<body>
+    <div class="main pad">
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="image/logo.png" alt="logo"><br>
+                    <em><span>TRAVELGO</span></em>
+                </a>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TRAVEL INFO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="sidenav">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">SERVICES</a>
+                <a href="#">TRAVEL INFO</a>
+                <a href="#">CONTACT</a>
+            </div>  
+            <div class="menu-btn" style="font-size: 30px; color: white; padding-top: 3px;padding-bottom: 3px; cursor: pointer;" onclick="onoff()">
+                &#9776
+            </div>
+        </header>
+        <div class="flex">
+            <div class="main-box">
+                <div class="main-text">
+                    <em><p>CORDILLERA<br>MOUNTAINS</p></em><br>
+                    <p class="small-text">TREKKING THE MOUNTAINS OF CONRDILLERA BLANCA</p>
+                </div>
+                <div class="main-icon">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                </div>
+                <div class="slide-btn ">
+                    <span  onclick="slideimg(0)" class="btn on"></span>
+                    <span  onclick="slideimg(1)" class="btn"></span>
+                    <span  onclick="slideimg(2)" class="btn"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-img">
+        <div class="img-slide">
+            <img src="image/slide1.jpg" alt="">
+            <img src="image/slide2.jpg" alt="">
+            <img src="image/slide3.jpg" alt="">
+        </div>
+    </div>
+    <article class="WELCOM pad" >
+        <h3>WELCOM</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br>exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+        <span>ABOUT US</span>
+        <span>REGISTRATION</span>
+       
+    </article>
+    <article class="total-main opacity">
+        <div class="opacity">
+            <div class="total pad">
+                <div class="total-box">
+                    <div class="total-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div class="total-text">
+                        <h1>1,245</h1>
+                        <p>Happy travellers</p>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <div class="total-icon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="total-text">
+                        <h1>845</h1>
+                        <p>Videos</p>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <div class="total-icon">
+                        <i class="fa-regular fa-image"></i>
+                    </div>
+                    <div class="total-text">
+                        <h1>9,543</h1>
+                        <p>Photos</p>
+                    </div>
+                </div>
+                <div class="total-box">
+                    <div class="total-icon">
+                        <i class="fa-solid fa-flag"></i>
+                    </div>
+                    <div class="total-text">
+                        <h1>145</h1>
+                        <p>Treks and tours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <article class="testimonials pad">
+        <h3>TESTIMONIALS</h3>
+        <div class="test-container">
+            <div class="tes-box">
+                <div class="img-box img-box1">
+                    <div class="Magnifying" onclick="open1(0)">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="tes-text">
+                    <p>Lorem ipsum dolor sit amet<br>
+                    consectetur adipisicing elit, sed<br> do eiusomdtempor incididunt</p>
+                    <h5>Mary, Nepal</h5>
+                </div>
+            </div>
+            <div class="tes-box">
+                <div class="img-box img-box2">
+                    <div class="Magnifying" onclick="open1(1)">
+                        <i class="fa-solid fa-magnifying-glass" ></i>
+                    </div>
+                </div>
+                <div class="tes-text">
+                    <p>Lorem ipsum dolor sit amet<br>
+                    consectetur adipisicing elit, sed<br> do eiusomdtempor incididunt</p>
+                    <h5>Jane, Germany</h5>
+                </div>
+            </div>
+            <div class="tes-box">
+                <div class="img-box img-box3">
+                    <div class="Magnifying" onclick="open1(2)">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="tes-text">
+                    <p>Lorem ipsum dolor sit amet<br>
+                    consectetur adipisicing elit, sed<br> do eiusomdtempor incididunt</p>
+                    <h5>Robert, China</h5>
+                </div>
+            </div>
+            <div class="tes-box">
+                <div class="img-box img-box4">
+                    <div class="Magnifying" onclick="open1(3)">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="tes-text">
+                    <p>Lorem ipsum dolor sit amet<br>
+                    consectetur adipisicing elit, sed<br> do eiusomdtempor incididunt</p>
+                    <h5>Niger, Alps</h5>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="id01">
+        
+            <div class="gallery">
+                <span class="close" onclick="close1()">&times;</span>
+                <div class="mySlides" style="display: block;">
+                    <div class="numbertext">1/4</div>
+                    <img src="image/TESTIMONIALS1.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2/4</div>
+                    <img src="image/TESTIMONIALS2.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3/4</div>
+                    <img src="image/TESTIMONIALS3.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4/4</div>
+                    <img src="image/TESTIMONIALS4.jpg" alt="" style="width: 100%;">
+                </div>
+                <a class="prev" onclick="prevSlides()">❮</a>
+                <a class="next" onclick="nextSlides()">❯</a>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="image/TESTIMONIALS1.jpg" style="width: 100%; opacity: 1;" class="demo" alt="Mary, Nepal" onclick="currentSlide(0)" >
+                    </div>
+                    <div class="column">
+                        <img src="image/TESTIMONIALS2.jpg"
+                        style="width: 100%;" class="demo" alt="Jane, Germany" onclick="currentSlide(1)">
+                    </div>
+                    <div class="column">
+                        <img src="image/TESTIMONIALS3.jpg" style="width: 100%;" class="demo" alt="Robert, China" onclick="currentSlide(2)">
+                    </div>
+                    <div class="column">
+                        <img src="image/TESTIMONIALS4.jpg" style="width: 100%;"class="demo" alt="Niger, Alps" onclick="currentSlide(3)" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <article class="newsletter pad">
+        <h3>NEWSLETTER</h3>
+        <div>
+            <input type="email" value="Email">
+            <button>SUBSCRIBE</button>
+        </div>
+    </article>
+    
+    <div class="foot-container">
+        <div class="opacity">
+            <article>
+                <div class="information">
+                    <div class="phone">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>+82 02 518 1234<br>
+                        +82 02 518 5678</p>
+                    </div>
+                    <div class="address">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <p>9870 St vincent Place,<br>Glasgow, DC 45 Fr 45.</p>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>master@travelgo.com</p>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input-box">
+                        <input type="text" value="Name" class="half h-r"  >
+                        <input type="text" value="Phone" class="half h-l"  >
+                    </div>
+                    <input type="text" value="Email">
+                    <input type="text" value="Message">
+                    <button>SEND</button>
+                </div>
+            </article>
+    </div>
+        <footer>
+            <p>Copyright ⓒ 2019 TRAVELGO All right reserved </p>
+        </footer>
+    </div>
+    <script>
+        var count=1;
+        function onoff(){
+                if(count % 2 == 1){
+                    document.getElementsByClassName("sidenav")[0].style.right = "0%";
+                    count++;
+                    console.log(count);
+                }
+                else{
+                    document.getElementsByClassName("sidenav")[0].style.right = "-100%";
+                    count++;
+                }
+        }
+    
+        
+        var index1;
+        function slideimg(n){
+           var slide = document.querySelector(".img-slide").style.left = n * -100 + "%";
+           if(n==0){
+            console.log(0);
+            document.getElementsByClassName("btn")[0].classList.add("on")
+           }else{
+            document.getElementsByClassName("btn")[0].classList.remove("on")
+           }
+           if(n==1){
+            console.log(1);
+            document.getElementsByClassName("btn")[1].classList.add("on")
+           }else{
+            document.getElementsByClassName("btn")[1].classList.remove("on")
+           }
+           if(n==2){
+            console.log(2);
+            document.getElementsByClassName("btn")[2].classList.add("on")
+           }else{
+            document.getElementsByClassName("btn")[2].classList.remove("on")
+           }
+        }
+        var index = 0;
+        setInterval(autoSlide,3000);
+        function autoSlide(){
+            var slide = document.querySelector(".img-slide").style.left = index * -100 + "%";
+            for(var i=0 ; i<3;i++){
+                document.getElementsByClassName("btn")[i].classList.remove("on");
+            }
+            document.getElementsByClassName("btn")[index].classList.add("on");
+            index++;
+            if(index==3){
+                index=0;
+            }
+        }
+
+        /*slide*/
+        
+        var slideIndex = 0;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        
+        function currentSlide(n){
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n){
+            console.log(slideIndex);
+            var i;
+            
+            for(i=0;i<slides.length;i++){
+                slides[i].style.display="none";
+            }
+            for(i=0;i<slides.length;i++){
+                dots[i].style.opacity = 0.6;
+            }
+            slides[slideIndex].style.display="block";
+            dots[slideIndex].style.opacity=1;
+            captionText.innerHTML = dots[slideIndex].alt;
+        }
+        function nextSlides(){
+            var i;
+            console.log(slideIndex);
+            if(slideIndex==3){
+                slideIndex=0;
+            }else{
+                slideIndex++;
+            }
+            for(i=0;i<slides.length;i++){
+                slides[i].style.display="none";
+            }
+            for(i=0;i<slides.length;i++){
+                dots[i].style.opacity = 0.6;
+            }
+            display_none();
+            slides[slideIndex].style.display="block";
+            dots[slideIndex].style.opacity=1;
+            captionText.innerHTML = dots[slideIndex].alt;
+        }
+        function prevSlides(){
+            var i;
+            console.log(slideIndex);
+            if(slideIndex==0){
+                slideIndex=3;
+            }else{
+                slideIndex--;
+            }
+            for(i=0;i<slides.length;i++){
+                slides[i].style.display="none";
+            }
+            for(i=0;i<slides.length;i++){
+                dots[i].style.opacity = 0.6;
+            }
+            display_none();
+            slides[slideIndex].style.display="block";
+            dots[slideIndex].style.opacity=1;
+            captionText.innerHTML = dots[slideIndex].alt;
+        }
+        function display_none(){
+            for(var i =0; i<4;i++){
+                document.getElementsByClassName("mySlides")[i].style.display="none";
+            }
+        }
+
+
+        /*gallery*/
+        var modal = document.getElementById('id01');
+        function open1(n){
+            showSlides(slideIndex = n);
+            document.getElementById('id01').style.display="block";
+        }
+        function close1(){
+            document.getElementById('id01').style.display="none";
+        }
+    </script>
+</body>
+</html>
